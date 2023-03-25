@@ -47,6 +47,7 @@ function createQRCode(text) {
 }
 
 bColor.addEventListener('input', () => {
+    output.style.backgroundColor = bColor.value;
     qr.background = _background = bColor.value;
     changeQR();
 });
